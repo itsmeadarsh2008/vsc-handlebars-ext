@@ -1,0 +1,37 @@
+{
+    "name": "vsc-handlebars-ext",
+    "displayName": "Handlebars",
+    "description": "A Handlebars Support For Visual Studio Code",
+    "version": "1.0.1",
+    "icon": "assets/vsc-handlebars-ext.png",
+    "publisher": "ItsMeAdarsh",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/itsmeadarsh2008/vsc-handlebars-ext"
+    },
+    "engines": {
+        "vscode": "^1.65.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "handlebars",
+            "aliases": ["Handlebars", "handlebars"],
+            "extensions": [".hbs",".handlebars"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "handlebars",
+            "scopeName": "text.html.handlebars",
+            "path": "./syntaxes/Handlebars.tmLanguage.json"
+        }],
+        "snippets": [
+            {
+                "language": "handlebars",
+                "path": "./snippets/handlebars.code-snippets"
+            }
+        ]   
+    }
+}
